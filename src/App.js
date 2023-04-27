@@ -1,13 +1,17 @@
 
-import { Routes, Route} from 'react-router-dom';
+//import { Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
-import HomePage from './components/HomePage'
+import HomePage from './pages/HomePage';
 
 export function App() {
    return (
     <>
-    <NavBar/>
+      <NavBar/>
+       <HomePage/> 
+        {/* <Routes>
+         <Route path ="#home" element = {<HomePage/>}/>
+      </Routes>   */}
     
     </>
    
