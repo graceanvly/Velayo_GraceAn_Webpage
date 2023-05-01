@@ -3,10 +3,9 @@ import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
 
 function FormExample() {
-    const [emailAddrs, setEmailAddrs] = useState("");
+    const [emailAddrs, setEmailAddrs] = useState('');
     const elements = [
-        { label: 'Email Address', type: 'email'},
-        { label: 'First Name', type: 'text'},
+        { label: 'Email Address', type: 'email',},
         { label: 'Password', type: 'password'},
     ];
 
@@ -16,7 +15,9 @@ function FormExample() {
             return(
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>{elem.label}</Form.Label>
-                    <Form.Control type = {elem.type} placeholder="Enter Email"/>
+                    <Form.Control type = {elem.type} placeholder="Enter"
+                    onChange={(e) => setEmailAddrs(e.target.value)}/>
+                    
                 </Form.Group>
 
             ); 

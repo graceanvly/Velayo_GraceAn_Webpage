@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import Login from './pages/Login';
-// import Register from './pages/Register';
+import Register from './pages/Register';
 
 export function App() {
    return (
@@ -13,7 +13,7 @@ export function App() {
          <Routes>
          <Route path ="/home" element = {<HomePage/>}/>
          <Route path ="/LogIn" element = {<Login/>}/>
-         {/* <Route path ="/Register" element {<Register/>}/> */}
+         <Route path ="/Register" element= {<Register/>}/>
       </Routes>   
     
     </>

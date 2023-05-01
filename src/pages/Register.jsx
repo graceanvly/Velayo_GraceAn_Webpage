@@ -1,12 +1,13 @@
 import {UseState, useEffect} from 'react';
-import Form from '../components/Form';
+import RegisterForm from '../components/RegisterForm';
+import './Login.css';
 
 const Register = () => {
     return (
         <div style={{width: 600, margin:"auto", marginTop: 40 }}>
-            <h3>Login</h3>
-            <Form/>
+            <h3>Register</h3>
+            <RegisterForm/>
         </div>
-    )
+    )   
 };
 export default Register;

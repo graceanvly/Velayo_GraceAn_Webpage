@@ -7,7 +7,7 @@ function HomePage() {
             class = "backgroundImage"
             style = {{
                height: "960px",
-               width: "1580px",
+               width: " 1580px",
                backgroundImage:
                'url("https://colibriwp.com/blog/wp-content/uploads/2020/06/boris-stefanik-wxJscL5ZzDA-unsplash.jpg")',
                backgroundSize: "contain",
